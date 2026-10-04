@@ -1,0 +1,70 @@
+{
+  "checked_at": "2026-10-04T06:44:33.533Z",
+  "checks": [
+    {
+      "name": "initial title and play overlay",
+      "pass": true
+    },
+    {
+      "name": "click starts moving timeline and real audio",
+      "pass": true,
+      "detail": {
+        "time": 2.2,
+        "audio": 2.20299,
+        "audioPaused": false,
+        "ready": 4
+      }
+    },
+    {
+      "name": "pause freezes timeline",
+      "pass": true
+    },
+    {
+      "name": "seek updates picture and audio together",
+      "pass": true,
+      "detail": {
+        "time": 29.4,
+        "audio": 29.4
+      }
+    },
+    {
+      "name": "sound can be muted",
+      "pass": true
+    },
+    {
+      "name": "sound can be enabled",
+      "pass": true
+    },
+    {
+      "name": "ending stops at 40 seconds and offers replay",
+      "pass": true
+    },
+    {
+      "name": "replay starts near beginning",
+      "pass": true
+    },
+    {
+      "name": "375px mobile layout has no horizontal overflow",
+      "pass": true
+    },
+    {
+      "name": "encoded MP4 genuinely plays in Chromium",
+      "pass": true,
+      "detail": {
+        "duration": 40,
+        "width": 1920,
+        "height": 1080,
+        "time": 1.182186,
+        "decoded": 40,
+        "error": null
+      }
+    },
+    {
+      "name": "no browser script or HTTP errors",
+      "pass": true,
+      "detail": []
+    }
+  ],
+  "pass": true,
+  "not_claimed": "Human artistic acceptance; mobile-device audio output; all non-Chromium browsers."
+}

@@ -1,0 +1,15 @@
+{
+  "name": "leave-a-light-on",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "把夜晚留一盏灯 — an original, code-painted animated short",
+  "scripts": {
+    "serve": "node scripts/serve.mjs",
+    "audio": "node scripts/audio.mjs",
+    "render": "node scripts/render.mjs"
+  },
+  "devDependencies": {
+    "playwright": "1.62.1"
+  }
+}

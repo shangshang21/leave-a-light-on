@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#091c29" />
+    <meta
+      name="description"
+      content="把夜晚留一盏灯。一部原创的代码绘制动画短片，献给慢慢回家的你。"
+    />
+    <title>把夜晚留一盏灯 · Leave a light on</title>
+    <link rel="stylesheet" href="src/style.css" />
+  </head>
+  <body>
+    <main>
+      <header>
+        <a class="wordmark" href="./">一盏灯 <span>A LITTLE FILM</span></a
+        ><span class="edition">原创动画 · 40 秒</span>
+      </header>
+      <section class="cinema" aria-label="短片播放器">
+        <canvas
+          id="film"
+          width="1920"
+          height="1080"
+          aria-label="雨夜城市、亮着灯的窗和两杯热茶"
+        ></canvas>
+        <button id="start" class="start" aria-label="播放短片并开启声音">
+          <span class="play-icon">▶</span
+          ><span>把夜晚留一盏灯<small>点击播放 · 建议打开声音</small></span>
+        </button>
+        <div class="controls">
+          <button id="play" aria-label="播放">播放</button>
+          <label class="sr-only" for="seek">播放进度</label
+          ><input
+            id="seek"
+            type="range"
+            min="0"
+            max="40"
+            step="0.01"
+            value="0"
+          />
+          <span id="time">0:00 / 0:40</span
+          ><button id="sound" aria-label="关闭声音">声音 开</button>
+          <button id="full" aria-label="全屏播放">全屏</button>
+        </div>
+      </section>
+      <section class="caption">
+        <div>
+          <p class="eyebrow">LEAVE A LIGHT ON</p>
+          <h1>把夜晚留一盏灯</h1>
+          <p>城市把夜晚拉得很长。<br />有一扇窗，替你亮着。</p>
+        </div>
+        <div class="details">
+          <p>画面、镜头、雨和音乐，都由代码生成。</p>
+          <p>一只小猫，两杯热茶。<br />慢慢回来就好。</p>
+          <a href="film/leave-a-light-on.mp4" download>下载成片 MP4 ↗</a>
+        </div>
+      </section>
+      <footer>
+        原创画面与合成音乐 · 2026<span
+          >献给老公，也献给每一个有人等的夜晚。</span
+        >
+      </footer>
+    </main>
+    <audio id="audio" src="film/soundtrack.m4a" preload="auto"></audio>
+    <script type="module" src="src/player.mjs"></script>
+  </body>
+</html>
